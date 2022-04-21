@@ -1,12 +1,15 @@
 import React from 'react';
 import Router from './router';
-import Navbar from './components/navbar';
+import { Footer, Navbar } from './components';
 
 function App() {
   return (
-    <div className="min-h-screen relative bg-base-200">
+    <div className="min-h-screen relative bg-base-100">
       <Navbar />
-      <Router />
+      <div className="pb-80">
+        <Router />
+      </div>
+      <Footer />
     </div>
   );
 }
