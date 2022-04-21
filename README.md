@@ -12,6 +12,8 @@ Start app locally: `npm run start`
 
 Run TailwindCSS: `npm run watch:css`
 
+Run linter: `npm run lint` or `npm run lint-fix`
+
 ## License
 
 GNU GPLv3
