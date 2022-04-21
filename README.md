@@ -10,6 +10,8 @@ Build app: `npm run build`
 
 Start app locally: `npm run start`
 
+Run TailwindCSS: `npm run watch:css`
+
 ## License
 
 GNU GPLv3
