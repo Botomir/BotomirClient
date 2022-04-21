@@ -4,3 +4,8 @@ dist
 idea
 src/styles/tailwind.css
 build
+tailwind.config.js
+postcss.config.js
+package.json
+package.json
+.gitignore
