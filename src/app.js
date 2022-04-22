@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="min-h-screen relative bg-base-100">
       <Navbar />
-      <div className="pb-64">
+      <div className="pb-60">
         <Router />
       </div>
       <Footer />

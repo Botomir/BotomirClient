@@ -33,6 +33,7 @@ function Settings() {
             data-set-theme={theme.key}
             data-act-class="ACTIVECLASS"
             className="btn"
+            key={theme.key}
           >
             {theme.label}
           </button>
