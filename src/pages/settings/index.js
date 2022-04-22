@@ -1,40 +1,22 @@
-import React, { useEffect } from 'react';
-import { themeChange } from 'theme-change';
+import React, { useState } from 'react';
+import Appearance from './components/appearance';
 
 function Settings() {
-  useEffect(() => {
-    themeChange(false);
-  }, []);
-
-  const themes = [
-    { key: 'light', label: 'Light' },
-    { key: 'autumn', label: 'Autumn' },
-    { key: 'winter', label: 'Winter' },
-    { key: 'lofi', label: 'LoFi' },
-    { key: 'dark', label: 'Dark' },
-    { key: 'night', label: 'Night' },
-    { key: 'black', label: 'Black' },
-    { key: 'dracula', label: 'Dracula' },
-    { key: 'aqua', label: 'Aqua' },
-    { key: 'synthwave', label: 'Synthwave' },
-    { key: 'pastel', label: 'Pastel' },
-    { key: 'cupcake', label: 'Cupcake' },
-    { key: 'cyberpunk', label: 'Cyberpunk' },
-    { key: 'forest', label: 'Forest' },
-  ];
+  const tabs = ['Appearance', 'Account'];
+  const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
     <div className="flex flex-col space-y-5 w-32">
-      <span>Settings</span>
-      <select data-choose-theme="" className="select w-full max-w-xs">
-        {
-        themes.map((theme) => (
-          <option value={theme.key}>
-            {theme.label}
-          </option>
-        ))
-      }
-      </select>
+      <span className="text-5xl">Settings</span>
+      <div className="tabs tabs-boxed">
+        <div className="flex flex-row">
+          {tabs.map((tab) => (
+            // eslint-disable-next-line jsx-a11y/anchor-is-valid,jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
+            <a className={`tab tab-lifted ${tab === activeTab && 'tab-active'}`} key={tab} onClick={() => setActiveTab(tab)}>{tab}</a>
+          ))}
+        </div>
+      </div>
+      { activeTab === tabs[0] && <Appearance />}
     </div>
   );
 }
