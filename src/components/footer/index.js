@@ -9,7 +9,7 @@ function Footer() {
         <a href="/about" className="link link-hover">About</a>
         <a href="/contact" className="link link-hover">Contact</a>
         <a href="/stats" className="link link-hover">Stats</a>
-        <a href="https://paypal.me/soorajmodi" target="_blank" rel="noreferrer">Donate</a>
+        <a href="/settings" className="link link-hover">Settings</a>
       </div>
       <a href="https://github.com/Botomir" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faGithub} size="2x" />

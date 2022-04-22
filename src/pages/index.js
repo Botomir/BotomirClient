@@ -6,6 +6,7 @@ import Docs from './docs';
 import Stats from './stats';
 import Login from './login';
 import SignUp from './signUp';
+import Settings from './settings';
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   Stats,
   Login,
   SignUp,
+  Settings,
 };

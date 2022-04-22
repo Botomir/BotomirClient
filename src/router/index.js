@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {
-  About, Contact, Docs, Home, Login, NotFound, SignUp, Stats,
+  About, Contact, Docs, Home, Login, NotFound, Settings, SignUp, Stats,
 } from '../pages';
 
 function Router() {
@@ -15,6 +15,7 @@ function Router() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
