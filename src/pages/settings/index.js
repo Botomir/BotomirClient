@@ -26,19 +26,15 @@ function Settings() {
   return (
     <div className="flex flex-col space-y-5 w-32">
       <span>Settings</span>
-      {
+      <select data-choose-theme="" className="select w-full max-w-xs">
+        {
         themes.map((theme) => (
-          <button
-            type="button"
-            data-set-theme={theme.key}
-            data-act-class="ACTIVECLASS"
-            className="btn"
-            key={theme.key}
-          >
+          <option value={theme.key}>
             {theme.label}
-          </button>
+          </option>
         ))
       }
+      </select>
     </div>
   );
 }
