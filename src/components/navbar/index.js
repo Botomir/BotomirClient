@@ -10,8 +10,8 @@ function Navbar() {
         </ul>
       </div>
       <div className="flex-none pr-3 space-x-3">
-        <a href="/login" className="btn btn-outline">Login</a>
-        <a href="/signup" className="btn">Sign Up</a>
+        <a href="/login" className="btn btn-outline normal-case">Login</a>
+        <a href="/signup" className="btn normal-case">Sign Up</a>
       </div>
     </div>
   );
